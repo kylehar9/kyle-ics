@@ -1,3 +1,5 @@
 const methods = require('./lib/methods.js')
 
-methods.helloWorld()
+let notes = methods.getNotes()
+
+console.log(notes)
