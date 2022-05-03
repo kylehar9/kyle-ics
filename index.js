@@ -1,7 +1,9 @@
 const methods = require('./lib/methods.js')
 
-// let notes = methods.getNotes()
-methods.getNotes()
+async function doThings() {
+  let notes = await methods.getNotes()
+  console.log(notes)
+}
 // methods.helloWorld()
 
-// console.log(notes)
+doThings()
