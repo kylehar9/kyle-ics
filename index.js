@@ -1,5 +1,14 @@
 const methods = require('./lib/methods.js')
 
-let notes = methods.getNotes()
+async function main() {
+  const tagParams = {
+    numberToReturn: 50, setId: 'all', tags: 'BoM: love', type: 'highlight,journal,reference'
+  }
 
-console.log(notes)
+  let notes = await methods.getNotes(tagParams)
+
+  console.log(notes)
+
+}
+
+main()
