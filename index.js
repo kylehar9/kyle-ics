@@ -9,6 +9,7 @@ async function main() {
   const notes = response.data
 
   await methods.moveNotes(notes, setId)
+
 }
 
 main()
