@@ -4,8 +4,8 @@ async function main() {
   const tagParams = {
     numberToReturn: 50, setId: 'all', tags: 'BoM: love', type: 'highlight,journal,reference'
   }
-
-  let notes = await methods.getNotes(tagParams)
+  const response = await methods.getNotes(tagParams)
+  const notes = response.data
 
   console.log(notes)
 
